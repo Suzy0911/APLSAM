@@ -9,52 +9,36 @@ Dataset
 
 --LiFePO4  
 --LiCoO2  
-  --support_<strong>eval</strong>  
-    --img  
-      --3.jpg  
-      --3.jpg   
-      --3.jpg  
-      --3.jpg  
-      ------------  (virtual divider, do not really exist in the folder)
-      --8.jpg
-      ...
-    --mask  
-      --3.png  
-      --3.png  
-      --3.png  
-      --3.png  
-      ------------
-      --8.png
-      ...
-  --query_<strong>eval</strong>  
+  --support_<strong>train</strong>  
     --img  
       --1.jpg  
-      --2.jpg (<strong>notice</strong> : slice no.3 and no.8 are used as the support image in the chunk)  
+      --2.jpg   
+      --3.jpg  
       --4.jpg  
-      --5.jpg  
-      ------------
-      --6.jpg
-      --7.jpg
-      --9.jpg
-      --10.jpg
-      ------------
       ...
     --mask  
       --1.png  
-      --2.png (<strong>notice</strong> : slice no.3 and no.8 are used as the support image in the chunk)  
+      --2.png  
+      --3.png  
       --4.png  
-      --5.png 
-      ------------
-      --6.jpg
-      --7.jpg
-      --9.jpg
-      --10.jpg
-      ------------
       ...
-  --support_train  
-    --(the same as evaluation(eval) data organization)
-  --query_train  
-    --(the same as evaluation(eval) data organization)
+  --query_<strong>train</strong>  
+    --img  
+      --11.jpg  
+      --12.jpg
+      --13.jpg  
+      --14.jpg  
+      ...
+    --mask  
+      --11.png  
+      --12.png
+      --13.png  
+      --14.png 
+      ...
+  --support_eval  
+    --(the same as training data organization)
+  --query_eval  
+    --(the same as training data organization)
 --LiMn2O4  
 --BiOCl
 --...
