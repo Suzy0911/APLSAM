@@ -1,5 +1,7 @@
 The official implementation of "Data-Efficient Segmentation of Scanning Probe Microscopy Images via an Enhanced Large Vision Model for Materials Characterization"
 
+Before training, please download the SAM checkpoints from [**here**](https://github.com/facebookresearch/segment-anything#model-checkpoints), and replace the **sam_checkpoint** in **yaml** file.
+
 If you try to run this project, refer to the file train_MAML_new_bs4.py, whose name means "the latest version of trainning code, and the batch size(bs) is 4".
 
 Using the following structure to organize the data: 
